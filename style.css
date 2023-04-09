@@ -1,5 +1,5 @@
 body {
-  height: 100vh;
+  height: 97vh;
 }
 .container {
   height: 100%;
@@ -9,4 +9,7 @@ body {
 .container > div {
   width: 6.25%;
   height: 6.25%;
+}
+.hover {
+  background-color: black;
 }

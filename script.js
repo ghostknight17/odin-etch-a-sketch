@@ -1,4 +1,5 @@
 const container = document.querySelector('.container');
+const resetButton = document.querySelector('.reset-button');
 let squareDiv;
 for (let i = 0; i < 256; i++) {
   squareDiv = document.createElement('div');
@@ -7,3 +8,6 @@ for (let i = 0; i < 256; i++) {
     e.target.classList.add('hover');
   });
 }
+resetButton.addEventListener('click', () => {
+  prompt('how many squares per side?', '16');
+});

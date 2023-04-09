@@ -1,8 +1,16 @@
 body {
-  height: 97vh;
+  height: 100vh;
+}
+.header{
+  display: flex;
+  height: auto;
+  margin-bottom: 8px;
+}
+.reset-button {
+  margin-left: auto;
 }
 .container {
-  height: 100%;
+  height: 95%;
   display: flex;
   flex-wrap: wrap;
 }

@@ -1,0 +1,12 @@
+body {
+  height: 100vh;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container > div {
+  width: 6.25%;
+  height: 6.25%;
+}

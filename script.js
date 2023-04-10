@@ -6,6 +6,7 @@ let squareDiv;
 createCanvas();
 
 resetButton.addEventListener('click', () => {
+  container.innerHTML = '';
   pickedNum = prompt('how many squares per side?', 16);
   createCanvas();
 });
@@ -13,6 +14,7 @@ resetButton.addEventListener('click', () => {
 function createCanvas() {
   for (let i = 0; i < pickedNum ** 2; i++) {
     squareDiv = document.createElement('div');
+    squareDiv.setAttribute('style', 'width: 6.25%; height: 6.25%');
     container.appendChild(squareDiv);
     leaveTrace(squareDiv);
   }

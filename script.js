@@ -1,4 +1,4 @@
-const container = document.querySelector('.container');
+const screen = document.querySelector('.screen');
 const resetButton = document.querySelector('.reset-button');
 let pickedNum = 16;
 let squareDiv;
@@ -6,7 +6,7 @@ let squareDiv;
 createCanvas();
 
 resetButton.addEventListener('click', () => {
-  container.innerHTML = '';
+  screen.innerHTML = '';
   pickedNum = Number(
     prompt(
       'Enter how many squares per side you want the canvas to be (maximum 100 squares)',
@@ -21,7 +21,7 @@ function createCanvas() {
   for (let i = 0; i < pickedNum ** 2; i++) {
     squareDiv = document.createElement('div');
     getResolution(pickedNum);
-    container.appendChild(squareDiv);
+    screen.appendChild(squareDiv);
     leaveTrace(squareDiv);
   }
 }
